@@ -13,17 +13,28 @@ sudo mv apache-maven-3.6.3 /usr/local/
 
 # Add to PATH
 
-Using your editor of choice update .bash_profile.
+
+### NOTE
+This example assumes you are using bash as your shell. You can make bash your default shell by issuing the following command:
+```
+chsh -s /bin/bash
+```
+
+More Details [here](https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/).
+
+
+
+### Using your editor of choice update .bash_profile.
 ```
 vim ~/.bash_profile
 ```
 
-Edit the bash profile so that the location of the apache bin folder is included in the the path variable.
+### Edit the bash profile so that the location of the apache bin folder is included in the the path variable.
 ```
 export PATH="/usr/local/apache-maven-3.6.3/bin:$PATH"
 ```
 
-Re-load bash profile.
+### Re-load bash profile.
 ```
 source ~/.bash_profile
 ```
